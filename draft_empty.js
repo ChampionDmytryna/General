@@ -1,1 +1,1 @@
-<button>Animated</button>
+<button>Animation</button>
