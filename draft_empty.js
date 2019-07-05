@@ -1,1 +1,0 @@
-<button>Animation</button>
