@@ -507,7 +507,71 @@ let square = new Rectang(10);
 console.log(square.calcArea());
 */
 
+//07.07.2019
+// let arr = [2,3,2,2,5,2,2,6,2];
+// for (let i=0; i < arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+
+// let arr = [2,3,2,2,5,2,2,6,2];
+// arr.forEach(function (i, item, mass){
+//     console.log(i + ':' + item + " в масиві " + mass);
+// });
+// console.log(arr);
+
+// let arr = [2,3,2,2,5,2,2,6,2];
+// for(let key of arr){
+//     console.log(key);
+// }
 
 
 
+// let number = 50;
+// while(number < 60){
+//     console.log(number);
+//     number++;
+// }
 
+// let num = 10;
+// do{
+//     console.log(num);
+//     num++;
+// }
+// while(num < 15);
+
+
+// function summ (number1, number2){
+//     console.log(number1*number2);
+// }
+// summ(12,5);
+
+
+// function kvad (chislo){
+//     let total = chislo*chislo;
+//     return total;
+// }
+
+// let ans = kvad(10);
+
+// alert(ans);
+
+
+// function data (){
+//     let priz = prompt("Прізвище");
+//     let name = prompt("Імя");
+//     let otche = prompt("По-батькові");
+//     let result = priz + " " + " " + name + " " + otche;
+//     return result;
+// }
+// alert(data());
+
+var pass = "massive";
+var ans = prompt("enter password");
+ans.toLocaleLowerCase();
+if(ans==pass){
+    console.log("right");
+}
+else{
+    console.log("wrong");
+}
