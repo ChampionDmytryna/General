@@ -1,6 +1,6 @@
+/*
 
-
-/*var answer = "YES"
+var answer = "YES"
 var question = prompt("Do you love Julia?", "YES or NO");
 var total = question.toUpperCase();
 if (total == answer) {
@@ -331,7 +331,7 @@ let elem = document.getElementById('format'),
     tage = document.getElementsByTagName('label'),
     tageOne = document.getElementsByTagName('img'),
     cls = document.getElementsByClassName('forheader');
-//console.log(tage);
+console.log(tage);
 
 
 
@@ -369,26 +369,26 @@ tageOne[0].style.backgroundColor = 'blue';
 
 let btn = document.querySelectorAll('button');
 let link = document.querySelector('a');
-//console.log(btn);
+console.log(btn);
 
-// btn[0].onclick = function(){
-//     alert("clicked button")
-// };
-
-
+btn[0].onclick = function(){
+    alert("clicked button")
+};
 
 
 
-// btn[0].addEventListener("click",function(event){
-// console.log("Подія " + event.type + 'на елементі' + event.target);
-// })
+
+
+btn[0].addEventListener("click",function(event){
+console.log("Подія " + event.type + 'на елементі' + event.target);
+})
 
 
 
-// btn[0].addEventListener("click",function(event){
-//     let target = event.target;
-//     target.style.display = 'none';
-//     })
+btn[0].addEventListener("click",function(event){
+    let target = event.target;
+    target.style.display = 'none';
+    })
 
 
 
@@ -397,21 +397,21 @@ let link = document.querySelector('a');
 
  document.body.appendChild(link);
 
-// link.addEventListener('click',function(event){
-//     event.preventDefault();
-//     console.log(event.type + event.target);
-// })
+link.addEventListener('click',function(event){
+    event.preventDefault();
+    console.log(event.type + event.target);
+})
 
 
 
 
 
 
-// btn.forEach(function(item) {
-// item.addEventListener('mouseleave', function(){
-// console.log("we are left the button");
-// });
-// });
+btn.forEach(function(item) {
+item.addEventListener('mouseleave', function(){
+console.log("we are left the button");
+});
+});
 
 
 
@@ -419,7 +419,7 @@ let link = document.querySelector('a');
 
 
 
- //window.addEventListener('DOMContentLoaded', function(){
+ window.addEventListener('DOMContentLoaded', function(){
    let box = document.querySelector('.box');
 
     box.addEventListener('touchstart', function(e){
@@ -430,19 +430,19 @@ let link = document.querySelector('a');
     console.log(e.changedTouches);
     console.log(e.targetTouches);
     });
- //}); 
+ }); 
 
-    // box.addEventListener('touchmove', function(e){
-    // e.preventDefault();
-    // console.log("red box touchmove");
+    box.addEventListener('touchmove', function(e){
+    e.preventDefault();
+    console.log("red box touchmove");
 
-    // });
+    });
 
-    // box.addEventListener('touchend', function(e){
-    //     e.preventDefault();
-    //     console.log("red box touchend");
+    box.addEventListener('touchend', function(e){
+        e.preventDefault();
+        console.log("red box touchend");
     
-    //     });
+        });
 
 
 
@@ -505,66 +505,73 @@ class Rectang{
 }
 let square = new Rectang(10);
 console.log(square.calcArea());
-*/
-
-//07.07.2019
-// let arr = [2,3,2,2,5,2,2,6,2];
-// for (let i=0; i < arr.length; i++){
-//     console.log(arr[i]);
-// }
-
-
-// let arr = [2,3,2,2,5,2,2,6,2];
-// arr.forEach(function (i, item, mass){
-//     console.log(i + ':' + item + " в масиві " + mass);
-// });
-// console.log(arr);
-
-// let arr = [2,3,2,2,5,2,2,6,2];
-// for(let key of arr){
-//     console.log(key);
-// }
 
 
 
-// let number = 50;
-// while(number < 60){
-//     console.log(number);
-//     number++;
-// }
-
-// let num = 10;
-// do{
-//     console.log(num);
-//     num++;
-// }
-// while(num < 15);
 
 
-// function summ (number1, number2){
-//     console.log(number1*number2);
-// }
-// summ(12,5);
+    07.07.2019
 
 
-// function kvad (chislo){
-//     let total = chislo*chislo;
-//     return total;
-// }
-
-// let ans = kvad(10);
-
-// alert(ans);
 
 
-// function data (){
-//     let priz = prompt("Прізвище");
-//     let name = prompt("Імя");
-//     let otche = prompt("По-батькові");
-//     let result = priz + " " + " " + name + " " + otche;
-//     return result;
-// }
-// alert(data());
+let arr = [2,3,2,2,5,2,2,6,2];
+for (let i=0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+
+let arr = [2,3,2,2,5,2,2,6,2];
+arr.forEach(function (i, item, mass){
+    console.log(i + ':' + item + " в масиві " + mass);
+});
+console.log(arr);
+
+let arr = [2,3,2,2,5,2,2,6,2];
+for(let key of arr){
+    console.log(key);
+}
+
+
+
+let number = 50;
+while(number < 60){
+    console.log(number);
+    number++;
+}
+
+let num = 10;
+do{
+    console.log(num);
+    num++;
+}
+while(num < 15);
+
+
+function summ (number1, number2){
+    console.log(number1*number2);
+}
+summ(12,5);
+
+
+function kvad (chislo){
+    let total = chislo*chislo;
+    return total;
+}
+
+let ans = kvad(10);
+
+alert(ans);
+
+
+function data (){
+    let priz = prompt("Прізвище");
+    let name = prompt("Імя");
+    let otche = prompt("По-батькові");
+    let result = priz + " " + " " + name + " " + otche;
+    return result;
+}
+alert(data());
 
 var pass = "massive";
 var ans = prompt("enter password");
@@ -575,3 +582,253 @@ if(ans==pass){
 else{
     console.log("wrong");
 }
+
+
+
+
+
+let mySite = "https://www.youtube.com",
+ans = mySite.slice(8,15);
+console.log(ans);
+ 
+
+
+
+
+let mySite = "https://www.youtube.com",
+symb = mySite.charCodeAt(10);
+console.log(symb);
+
+
+
+
+
+let lett = "аяАЯ";
+console.log(lett.charCodeAt(0));
+console.log(lett.charCodeAt(1));
+console.log(lett.charCodeAt(2));
+console.log(lett.charCodeAt(3));
+
+
+
+
+
+let name = "Иваh";
+for(let i = 0; i < name.length; i++){
+    if(name.charCodeAt(i) < 1040 || name.charCodeAt(i) > 1103){
+        console.log(name.charAt(i))
+    }
+    else{
+        console.log("right")
+    }
+};
+
+
+
+
+
+var test = "Note about fast-forwards",
+regVer = /fast/;
+console.log(test.search(regVer));
+
+
+
+
+
+var test = "765485 vjdszvkm nvfjdvn jieowjfo",
+regV = /^\d{6}/g,
+result = test.match(regV);
+console.log(result);
+
+
+
+var test = "765485 vjdszvkm nvfjdvn jieowjfo",
+rev = / /g;
+console.log(test.replace(rev, ','));
+
+
+
+let mass = ["Venera", 22, "Mars"];
+
+    for(let i = 0; i < mass.length; i++){
+        if(isNaN(mass[i])){
+            console.log ("Not a number");
+        }else{
+            console.log ("Is a number");
+        } 
+    
+    }
+
+
+
+let test = 5.8700,
+result = test.toFixed(4);
+console.log(result);
+
+
+
+var age = 16.758,
+total = Math.floor(age);
+console.log(total);
+
+
+var rand = Math.round(Math.random()*100);
+alert(rand);
+
+
+
+
+function kvad (chislo){
+    let total = chislo*chislo;
+    return total;
+}
+
+let ans = kvad(10);
+alert(ans);
+
+
+
+
+
+
+
+
+
+let num = 51;
+switch (true) {
+case num > 50: 
+    console.log('Більше 50');
+    break;
+case num < 50:
+    console.log('Менше 50');
+    break;
+    case 50: 
+    console.log('Рівне 50');
+    break;
+default:
+    console.log('Smth wrong');
+    break;
+}
+
+
+
+
+let gift = prompt("input nubrer 1-5");
+switch (Number(gift)) {
+    case 1:
+        alert("computer");
+        break;
+    case 2:
+        alert("flesh-memory");
+        break;
+    case 3:
+        alert("phone");
+        break;
+    case 4:
+        alert("book");
+        break;
+    case 5:
+        alert("tv");
+        break;
+        default:
+        alert("You input invalid number");
+        break;
+} 
+
+
+
+
+
+let num = 0;
+(num==50)? console.log("num is 50"):console.log("wrong");
+
+
+
+let apple = 15,
+orange = 15;
+let result = (apple==orange)? "Рівне" : "Різна кількість";
+alert(result);
+
+
+for(let key in navigator){
+    console.log( key + " - " + navigator[key]);
+}
+
+
+for(let key in location){
+    console.log(key + " - " + navigator[key]);
+}
+
+
+for(let key in screen){
+    console.log(key + " - " + screen[key]);
+}
+
+
+
+let arr = [2,3,2,2,5,2,2,6,2];
+arr.forEach(function (i, item, mass){
+    console.log(i + ':' + item + " в масиві " + mass);
+});
+console.log(arr);
+
+
+
+var a = {a:1}
+var b = {b:3}
+var c = {}
+c[a] = 1
+c[b] = 2
+console.log(c)
+
+
+
+var a = [1,2,3]
+var b = [4,5,6]
+var c = {}
+c[a] = 1
+c[b] = 2
+console.log(c)
+
+
+
+var foo = {n: 1};
+var bar = foo;
+foo.x = foo = {n: 2};
+console.log(foo.x)
+*/
+
+
+try{
+    console.log("Початок");
+    console.log(a);
+    console.log("Результат");
+} catch (error){
+    console.log(error.name);
+    console.log(error.message);
+    console.log(error.stack)
+    console.log(`Ми отримали помилку ${error.name}`)
+}
+
+console.log("Продовжує працювати")
+
+
+
+
+
+
+let json = '{"id":2}'
+try{
+let user = JSON.parse(json);
+console.log(user);
+ if (!user.name){
+     throw new Error('Тут немає імені')
+ }
+} catch (error){
+    console.log(error.name);
+    console.log(error.message);
+    console.log(error.stack);
+    console.log(`Ми отримали помилку ${error.name}`);
+}finally{
+    console.log("А я виконаюся завжди")
+    }
