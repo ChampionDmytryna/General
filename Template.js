@@ -832,3 +832,46 @@ console.log(user);
 }finally{
     console.log("А я виконаюся завжди")
     }
+
+
+
+    
+
+let drink = 1;
+
+function shoot(arrow, headshot, fail){
+console.log("Ви зробили вистріл");
+
+setTimeout(function(){
+    Math.random() > .5 ? headshot({}) : fail("Ви промахнулися!"); 
+}, 3000)
+};
+
+function win(){
+    console.log("Ви перемоли!");
+(drink == 1) ? beer() : money();
+}
+
+function beer(){
+    console.log("Вам дали пиво!")
+}
+
+function money(){
+    console.log("Вам дали гроші!")
+}
+
+function loose(){
+    console.log("Ви програли!")
+}
+
+shoot({},
+    function(mark){
+        console.log("Ви попали в ціль!");
+        win(mark, beer, money);
+    },
+    function(miss){
+        console.error(miss);
+        loose();
+    }
+)
+
