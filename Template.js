@@ -875,3 +875,46 @@ shoot({},
     }
 )
 
+
+
+
+
+
+
+
+let drink = 2;
+
+function shoot(arrow){
+console.log("Ви зробили вистріл");
+let promise = new Promise(function(resolve, reject){
+setTimeout(function(){
+    Math.random() > .5 ? resolve({}) : reject("Ви промахнулися!"); 
+}, 3000)
+})
+return promise
+}
+
+
+
+
+function win(){
+    console.log("Ви перемоли!");
+(drink == 1) ? beer() : money();
+}
+
+function beer(){
+    console.log("Вам дали пиво!")
+}
+
+function money(){
+    console.log("Вам дали гроші!")
+}
+
+function loose(){
+    console.log("Ви програли!")
+}
+
+shoot({})
+ .then(mark => console.log("Ви попали в ціль!"))
+ .then(win)
+ .catch(loose)
