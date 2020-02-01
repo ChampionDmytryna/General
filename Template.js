@@ -832,3 +832,18 @@ console.log(user);
 }finally{
     console.log("А я виконаюся завжди")
     }
+
+
+
+
+    var summer = {
+        Spain : 2000,
+        Egypt : 1500,
+        Italy : 3000
+    };
+    
+    summer.computing = function(people, days, country){
+        var result = people * days * this[country];
+        return result
+    };
+    console.log ("ПІДСУМОК: " + summer.computing(2, 10, 'Spain'))
