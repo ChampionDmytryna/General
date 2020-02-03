@@ -930,3 +930,43 @@ shoot({})
  .then(mark => console.log("Ви попали в ціль!"))
  .then(win)
  .catch(loose)
+
+
+
+
+
+ function makeArray(){
+     var items = [];
+     for(let i = 0; i < 10; i++){
+         var item = function(){
+             console.log(i)
+         }
+         items.push(item);
+     }
+     return items;
+ };
+
+ var arr = makeArray()
+ arr[1]();
+ arr[7]();
+ arr[3]();
+
+
+
+
+
+ function makeArray(){
+    var items = [];
+    for(var i = 0; i < 10; i++){
+        var item = function(){
+            console.log(i)
+        }
+        items.push(item);
+    }
+    return items;
+};
+
+var arr = makeArray()
+arr[1]();
+arr[7]();
+arr[3]();
