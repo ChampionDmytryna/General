@@ -934,7 +934,7 @@ shoot({})
 
 
 
-
+//1, 7, 3 - let in circle
  function makeArray(){
      var items = [];
      for(let i = 0; i < 10; i++){
@@ -954,7 +954,7 @@ shoot({})
 
 
 
-
+//10, 10, 10 - var in circle
  function makeArray(){
     var items = [];
     for(var i = 0; i < 10; i++){
@@ -970,3 +970,6 @@ var arr = makeArray()
 arr[1]();
 arr[7]();
 arr[3]();
+
+
+
