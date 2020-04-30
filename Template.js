@@ -836,3 +836,205 @@ console.log(arr);
 
 
 
+<<<<<<< HEAD
+=======
+var a = {a:1}
+var b = {b:3}
+var c = {}
+c[a] = 1
+c[b] = 2
+console.log(c)
+
+
+
+var a = [1,2,3]
+var b = [4,5,6]
+var c = {}
+c[a] = 1
+c[b] = 2
+console.log(c)
+
+
+
+var foo = {n: 1};
+var bar = foo;
+foo.x = foo = {n: 2};
+console.log(foo.x)
+*/
+
+
+try{
+    console.log("Початок");
+    console.log(a);
+    console.log("Результат");
+} catch (error){
+    console.log(error.name);
+    console.log(error.message);
+    console.log(error.stack)
+    console.log(`Ми отримали помилку ${error.name}`)
+}
+
+console.log("Продовжує працювати")
+
+
+
+
+
+
+let json = '{"id":2}'
+try{
+let user = JSON.parse(json);
+console.log(user);
+ if (!user.name){
+     throw new Error('Тут немає імені')
+ }
+} catch (error){
+    console.log(error.name);
+    console.log(error.message);
+    console.log(error.stack);
+    console.log(`Ми отримали помилку ${error.name}`);
+}finally{
+    console.log("А я виконаюся завжди")
+    }
+
+
+
+
+    var summer = {
+        Spain : 2000,
+        Egypt : 1500,
+        Italy : 3000
+    };
+    
+    summer.computing = function(people, days, country){
+        var result = people * days * this[country];
+        return result
+    };
+    console.log ("ПІДСУМОК: " + summer.computing(2, 10, 'Spain'))
+    
+
+let drink = 1;
+
+function shoot(arrow, headshot, fail){
+console.log("Ви зробили вистріл");
+
+setTimeout(function(){
+    Math.random() > .5 ? headshot({}) : fail("Ви промахнулися!"); 
+}, 3000)
+};
+
+function win(){
+    console.log("Ви перемоли!");
+(drink == 1) ? beer() : money();
+}
+
+function beer(){
+    console.log("Вам дали пиво!")
+}
+
+function money(){
+    console.log("Вам дали гроші!")
+}
+
+function loose(){
+    console.log("Ви програли!")
+}
+
+shoot({},
+    function(mark){
+        console.log("Ви попали в ціль!");
+        win(mark, beer, money);
+    },
+    function(miss){
+        console.error(miss);
+        loose();
+    }
+)
+
+
+
+
+
+
+
+
+let drink = 2;
+
+function shoot(arrow){
+console.log("Ви зробили вистріл");
+let promise = new Promise(function(resolve, reject){
+setTimeout(function(){
+    Math.random() > .5 ? resolve({}) : reject("Ви промахнулися!"); 
+}, 3000)
+})
+return promise
+}
+
+
+
+
+function win(){
+    console.log("Ви перемоли!");
+(drink == 1) ? beer() : money();
+}
+
+function beer(){
+    console.log("Вам дали пиво!")
+}
+
+function money(){
+    console.log("Вам дали гроші!")
+}
+
+function loose(){
+    console.log("Ви програли!")
+}
+
+shoot({})
+ .then(mark => console.log("Ви попали в ціль!"))
+ .then(win)
+ .catch(loose)
+
+
+
+
+//1, 7, 3 - let in circle
+ function makeArray(){
+     var items = [];
+     for(let i = 0; i < 10; i++){
+         var item = function(){
+             console.log(i)
+         }
+         items.push(item);
+     }
+     return items;
+ };
+
+ var arr = makeArray()
+ arr[1]();
+ arr[7]();
+ arr[3]();
+
+
+
+
+//10, 10, 10 - var in circle
+ function makeArray(){
+    var items = [];
+    for(var i = 0; i < 10; i++){
+        var item = function(){
+            console.log(i)
+        }
+        items.push(item);
+    }
+    return items;
+};
+
+var arr = makeArray()
+arr[1]();
+arr[7]();
+arr[3]();
+
+
+
+>>>>>>> 3cd5227fa5675a02f2d887ce3e271e468c264d6e
