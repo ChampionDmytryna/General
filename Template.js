@@ -1,342 +1,8 @@
-/*
-
-var answer = "YES"
-var question = prompt("Do you love Julia?", "YES or NO");
-var total = question.toUpperCase();
-if (total == answer) {
-    document.write("Get married!");
-}
-else {
-    document.write("So sad...");
-} 
-
-
-
-
-
-a = 5;
-console.log(a);
-
-
-
-
-
-
-let person = {
-    name: "John",
-    age: 30,
-    isMarried: false,
-}
-console.log(person['age']);
-
-
-
-
-
-
-let fruits = ["apple", "orange", "strawberry", "lemon"];
-console.log(fruits[0]);
-
-
-
-
-for (let i=0; i<10; i=i+1){
-    console.log(i);
-}
-
-
-
-
-
-let conf = 1;
-while (conf<=25) {
-    console.log(conf); 
-    conf++;
-}
-
-
-
-
-
-
-for (let i=0; i<10; i=i+1){
-    if(i==3){
-    break    
-    }
-
-console.log(i);
-}
-
-
-
-
-
-
-for (let i = 1; i <= 20; i++){
-    if(i == 6){
-        continue
-    }
-    console.log(i);
-}
-
-
-
-
-
-
-function message(){
-    alert("Hello world!");
-    message()
-
-
-
-
-
-
-
-function message(a,b){
-    let result = a + b;
-    console.log(result);
-}
-
-message(12,14);
-
-
-
-
-
-
-
-
-
-
-
-function message(a,b){
-    let result = a + b;
-    return result;
-}
-
-alert(message(15,14));
-
-
-
-
-
-
-
-
-let stuff = new Object();
-stuff.people = 2000;
-stuff.work = true;
-console.log(stuff.work);
-
-
-
-
-
-
-let person = {
-age: 45,
-nationality: "uk",
-name: "Marek",
-}
-
-console.log(person["age"]);
-
-
-
-
-
-
-
-function calc(lang, callback){
- setTimeout(function(){
-console.log("Це перша функцыя" + lang)
- };500);
- callback();
-}
-
-function done(){
-    console.log("Це друга фукнція");
-}
-
-calc("Java", done);
-
-
-
-
-
-
-
-
-
-
-
-
-function template(lang,callback){
-    console.log(lang);
-    callback()
-}
-
-function done(){
-    console.log("друга");
-}
-
-template("JavaScript", done);
-
-
-
-
-
-
-
-function learnJS(lang, callback){
-    console.log("Я вчу" + lang)
-    callback();
-}
-
-learnJS("JavaScript", function()
-{
-console.log("Я закынчив навчання!")
-})
-
-
-
-
-
-
-
-
-
-//setInterval(alert(1), 5000);
-
-
-
-
-
-
-
-
-function first(){
-   alert("Text");
-}
-function second(){
-alert(2);
- }
-setInterval(first, 3000);
- second();
- 
-
-
-
-
-
-
-
-
- 
-function calc(lang, callback){
- setTimeout(function(){
-console.log("Це перша функцыя " + lang)
- },500);
- callback();
-}
-
-function done(){
-    console.log("Це друга фукнція");
-}
-
-calc("Java", done);
-
-// callback зроблено але спочатку виводиться 2 функція замість першої.
-
-
-
-
-
-
-
-
-let arr = [1, 2, 3, 4, 5];
-arr.forEach(function(capture, j, bill){
-console.log(j + " : " + capture + "(масив: " + bill + ')');
-});
-console.log(arr);
-
-
-
-
-let mass = [1, 5, 6, 3, 4];
-
-for(let kinder of mass){
-    console.log(kinder);
-}
- 
-
-
-
-
-
-let mass = ["apple", "orange", "watermelon"];
-let arr =  ["berry", "orange", "lemon"];
-let total = mass.concat(arr);
-console.log(total);
-
-
-
-
-
-
-
-let mass = ["apple", "orange", "watermelon"];
-result = mass.join('-');
-document.write(result);
-
-
-
-
-
-
-let ans = prompt("question ","answer ");
-    arr = [];
-arr = ans.split('.');
-console.log(arr);
-
-
-
-
-
-
-
-
-
-
-
-let arr = [1, 15, 4, 4000, 0.7];
-let i = arr.sort(compare);
-function compare(a,b){
-    return a-b;
-}
-
-console.log(arr);
-
-
-
-
-
-
-
-
 let elem = document.getElementById('format'),
     tage = document.getElementsByTagName('label'),
     tageOne = document.getElementsByTagName('img'),
     cls = document.getElementsByClassName('forheader');
 console.log(tage);
-
-
-
-
-
 
 
 
@@ -350,19 +16,9 @@ tageOne[0].style.backgroundColor = 'blue';
 
 
 
-
-
-
-
-
-
   for(let i=0; i<tage.length; i++){
      tage[i].style.backgroundColor = 'red'; 
   }
-
-
-
-
 
 
 
@@ -374,7 +30,6 @@ console.log(btn);
 btn[0].onclick = function(){
     alert("clicked button")
 };
-
 
 
 
@@ -393,8 +48,6 @@ btn[0].addEventListener("click",function(event){
 
 
 
-
-
  document.body.appendChild(link);
 
 link.addEventListener('click',function(event){
@@ -406,15 +59,11 @@ link.addEventListener('click',function(event){
 
 
 
-
 btn.forEach(function(item) {
 item.addEventListener('mouseleave', function(){
 console.log("we are left the button");
 });
 });
-
-
-
 
 
 
@@ -449,17 +98,9 @@ console.log("we are left the button");
 
 
 
-
-
-
-
-
-
  let ans = prompt("Password");
  let reg = /\d{6}/g;
  console.log(ans.match(reg));
-
-
 
 
 
@@ -507,10 +148,6 @@ let square = new Rectang(10);
 console.log(square.calcArea());
 
 
-
-
-
-    07.07.2019
 
 
 
@@ -685,10 +322,6 @@ function kvad (chislo){
 
 let ans = kvad(10);
 alert(ans);
-
-
-
-
 
 
 
@@ -930,3 +563,276 @@ shoot({})
  .then(mark => console.log("Ви попали в ціль!"))
  .then(win)
  .catch(loose)
+
+
+
+let = "The grown-ups' response. This time. Was to advise me to lay aside my drawings of boa constrictors. Whether from the inside or the outside. And devote myself instead to geography history arithmetic and grammar. That is why at the age of six. I gave up what might have been a magnificent career as a painter. I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two. Grown-ups never understand anything by themselves and it is tiresome for children to be always and forever explaining things to them."
+
+let sentens = "Чудове місто Львів. Я його люблю.";
+regv = sentens.split(' ');
+for (i=0; i<sentens.length; i++){
+    console.log(regv[i]);
+}
+mass = [];
+res = mass.push(regv[i]);
+console.log(res)
+
+
+
+
+
+mass = [];
+res = mass.push(regv);
+//result1 = sentens.reverse();
+console.log(res)
+
+var string = "0,1";
+var array = string.split(",");
+console.log(array[0]);
+
+
+function result(){
+
+}
+
+
+
+var answer = "YES"
+var question = prompt("Do you love Julia?", "YES or NO");
+var total = question.toUpperCase();
+if (total == answer) {
+    document.write("Get married!");
+}
+else {
+    document.write("So sad...");
+} 
+
+
+a = 5;
+console.log(a);
+
+
+
+let person = {
+    name: "John",
+    age: 30,
+    isMarried: false,
+}
+console.log(person['age']);
+
+
+
+let fruits = ["apple", "orange", "strawberry", "lemon"];
+console.log(fruits[0]);
+
+
+
+for (let i=0; i<10; i=i+1){
+    console.log(i);
+}
+
+
+
+let conf = 1;
+while (conf<=25) {
+    console.log(conf); 
+    conf++;
+}
+
+
+
+for (let i=0; i<10; i=i+1){
+    if(i==3){
+    break    
+    }
+
+console.log(i);
+}
+
+
+
+for (let i = 1; i <= 20; i++){
+    if(i == 6){
+        continue
+    }
+    console.log(i);
+}
+
+
+
+function message(){
+    alert("Hello world!");
+    message()
+
+
+
+function message(a,b){
+    let result = a + b;
+    console.log(result);
+}
+
+message(12,14);
+
+
+
+function message(a,b){
+    let result = a + b;
+    return result;
+}
+
+alert(message(15,14));
+
+
+
+
+let stuff = new Object();
+stuff.people = 2000;
+stuff.work = true;
+console.log(stuff.work);
+
+
+
+
+let person = {
+age: 45,
+nationality: "uk",
+name: "Marek",
+}
+
+console.log(person["age"]);
+
+
+
+
+function calc(lang, callback){
+ setTimeout(function(){
+console.log("Це перша функцыя" + lang)
+ };500);
+ callback();
+}
+
+function done(){
+    console.log("Це друга фукнція");
+}
+
+calc("Java", done);
+
+
+
+
+function template(lang,callback){
+    console.log(lang);
+    callback()
+}
+
+function done(){
+    console.log("друга");
+}
+
+template("JavaScript", done);
+
+
+
+
+
+
+
+function learnJS(lang, callback){
+    console.log("Я вчу" + lang)
+    callback();
+}
+
+learnJS("JavaScript", function()
+{
+console.log("Я закынчив навчання!")
+})
+
+
+//setInterval(alert(1), 5000);
+
+
+
+function first(){
+   alert("Text");
+}
+function second(){
+alert(2);
+ }
+setInterval(first, 3000);
+ second();
+ 
+
+
+
+ 
+function calc(lang, callback){
+ setTimeout(function(){
+console.log("Це перша функцыя " + lang)
+ },500);
+ callback();
+}
+
+function done(){
+    console.log("Це друга фукнція");
+}
+
+calc("Java", done);
+
+// callback зроблено але спочатку виводиться 2 функція замість першої.
+
+
+
+
+let arr = [1, 2, 3, 4, 5];
+arr.forEach(function(capture, j, bill){
+console.log(j + " : " + capture + "(масив: " + bill + ')');
+});
+console.log(arr);
+
+
+
+
+let mass = [1, 5, 6, 3, 4];
+
+for(let kinder of mass){
+    console.log(kinder);
+}
+ 
+
+
+
+let mass = ["apple", "orange", "watermelon"];
+let arr =  ["berry", "orange", "lemon"];
+let total = mass.concat(arr);
+console.log(total);
+
+
+
+
+
+let mass = ["apple", "orange", "watermelon"];
+result = mass.join('-');
+document.write(result);
+
+
+
+
+
+let ans = prompt("question ","answer ");
+    arr = [];
+arr = ans.split('.');
+console.log(arr);
+
+
+
+
+let arr = [1, 15, 4, 4000, 0.7];
+let i = arr.sort(compare);
+function compare(a,b){
+    return a-b;
+}
+
+console.log(arr);
+
+
+
